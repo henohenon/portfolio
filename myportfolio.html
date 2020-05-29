@@ -6,24 +6,148 @@
 </head>
 <body>
   <link rel="stylesheet" href="myportfolio.css" />
-  <h1>kitamura's　portfolio</h1>
+  <h1>henoheno's　portfolio</h1>
     <h3>私について</h3>
     <ul>
-      <li>n高等学校４期生、現在１５歳</li>
-      <li>福岡県在住</li>
+      <li class="jikosyokai">n高等学校４期生、現在１５歳</li>
+      <li class="jikosyokai">unityでゲーム開発をするのが一番の趣味</li>
+      <li class="jikosyokai">そのくせ最近blenderしかやってない</li>
+      <li class="jikosyokai">この頃はwebプログラミングなども勉強中</li>
     </ul>
-    <h3>できること</h3>
-        <h4>　unity</h4>
-        <h5>　　　・・・簡単なアクションゲーなら多分苦戦せずに作れると自分では思ってる</h5>
-        <h4>　html5,css,js</h4>
-        <h5>　　　・・・n高に入ってから勉強中、まだまだ</h5>
-        <h4>　blender</h4>
-        <h5>　　　・・・人を作ろうと思い立つぐらいには成長</h5>
-        <h4>　adobe illustrater,photoshop,animate</h4>
-        <h5>　　　・・・触ってるぐらい、まだまだ</h5>
-    <h4>作品</h4>
-    <br>
-    <a href="https://henohenon.github.io/keisanki/keisan.html">計算機</a>
-    <ul></ul>
-</body>
+    <h3>できること</h3><br>
+    <div>
+      <div style="display:inline-block;"  class="box16">
+        <h2>Unity</h2>
+        <img
+          class ="unity-rogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg"
+          alt="unityのロゴ"
+        />
+        <h5 class="dekitext">簡単なアクションゲーなら苦戦せずに作れる(はず)</h5>
+        <h5 class="dekitext">3~4年ぐらいやっている</h5>
+      </div>
+      <div style="display:inline-block;"  class="box16">
+        <h2>html5、css、javascript</h2>
+        <img
+          class ="html5-rogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+          alt="html5のロゴ"
+        />
+        <img
+          class ="css-rogo"
+          src="https://on-ze.com/wordpress/wp-content/uploads/2015/03/badge_css3.png"
+          alt="cssのロゴ"
+        />
+        <img
+          class ="javasc-rogo"
+          src="https://wp-doctor.jp/blog/wp-content/uploads/2017/09/javascript.png"
+          alt="javascriptのロゴ"
+        />
+        <h5 class="dekitext">このぐらいのサイトなら作れるがまだまだ</h5>
+        <h5 class="dekitext">n高に入ってから勉強中なので数ヶ月</h5>
+      </div>
+      <div style="display:inline-block;"  class="box16">
+        <h2>blender</h2>
+        <img
+        class ="blender-rogo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Logo_Blender.svg/1200px-Logo_Blender.svg.png"
+        alt="blenderのロゴ"
+        />
+        <h5 class="dekitext">人を作ろうと思い立つぐらいには成長</h5>
+        <h5 class="dekitext">1~3年ぐらいやっている</h5>
+      </div>
+    </div>
+      <h3>作品</h3>
+    <div>
+      <h4 class="sakuhin">・javascriptで計算機を作る</h4>
+      <div class="hidden_box">
+        <label for="label1">クリックで詳しくみる</label>
+        <input type="checkbox" id="label1"/>
+        <div class="hidden_show">
+          <ul>
+            <p class="sakuhin-kuwasi-tex">
+              前に一回ボタンからの計算機は作ってたので、textboxから入力する形にしました。<br>
+              整数の四則演算が出来ます。いろんな記号を使える様にもしました。
+            </p>
+        </ul>
+          <h5 class="img-setume">小数点ぐらいはできてもよかったな</h5>
+          <img 
+            class="keisanki-gamen"  
+            src="計算機の画面.png" 
+            alt ="計算機の画面"
+          >
+          <br>
+          <a href="https://henohenon.github.io/keisanki/keisan.html">こちらから</a>
+        </div>
+      </div>
+      <h4 class="sakuhin">・blenderで初の人のモデルに挑戦してます</h4>
+      <div class="hidden_box">
+        <label for="label2">クリックで詳しくみる</label>
+        <input type="checkbox" id="label2"/>
+        <div class="hidden_show">
+          <p class="sakuhin-kuwasi-tex">
+            動画を見ながらですがなんとか作れました。<br>
+            その動画で頭身が小さい方が作りやすいと聞いたので、二頭身です。<br>
+            三面図(設計図みたいな)は、動画の配信者の方が無料で配布してあるのに、<br>
+            髪型や眉毛、自分でデザインして使いました(もちろん改変OKなやつね)。<br>
+            服の部分だけ三面図サボってたので、なかなかデザインが決まらず大変でした。<br>
+            動かせる様にして、色を塗って、アニメーションを作たら完成です。<br>
+            結構気に入ってます。新しく作るゲームの主人公にする予定です。
+          </p>
+          <h5>胸当て(？)の部分、結構苦労しました全然デザインが決まらなくて。</h5>
+          <img 
+            class="human-moderu-syomen"  
+            src="人モデル正面.png" 
+            alt ="人モデル正面"
+          >
+          <h5>ちなみに真ん中ぐらいのまるネジみたいにマイナスの凹みがあります。</h5>
+          <img 
+            class="human-moderu-usiro"  
+            src="人モデル後ろ.png" 
+            alt ="人モデル後ろ"
+          >
+          <h5>服、複雑にしすぎて動きつけるやつの難易度が上がりまくってます。</h5>
+          <img 
+            class="human-moderu-kakudai"  
+            src="人モデル拡大.png" 
+            alt ="人モデル拡大"
+          >
+        </div>
+      </div>
+      <h4 class="sakuhin">・初めての、オリジナルゲーム！</h4>
+      <div class="hidden_box">
+        <label for="label3">クリックで詳しくみる</label>
+        <input type="checkbox" id="label3"/>
+        <div class="hidden_show">
+          <div class="sakuhin-kuwasi">
+              <p class="sakuhin-kuwasi-tex">
+                まじモンのクソゲーです。全5ステージ収録。とりあえずやりたいことを詰め込みました。<br>
+                ホーム画面、BGM、クリア画面を最近の私が追加しています。作者の私がクリアできてません。<br>
+                クリア画面(大したモンじゃないけど)をまともに挑んでみた人はいません多分。<br>
+                ５ステージ目の難易度がまじで異常です。クリアさせる気がありません。というか長すぎる。<br>
+                やっても、集中力、充電を無限に失わせます。でもやってくれると嬉しいこの矛盾。<br>
+                ただ、プレイできるのはmacだけです申し訳ない、開き方も難しいですすいません。<br>
+                開き方は、ダウンロード＆展開したあと、右クリックからの開く。<br>
+                一回キャンセルしていただいてもう一回右クリック＆開くしていただければ。
+              </p>
+          </div>
+          <h5>無駄にエフェクト垂れ流してるせいで充電の減りが早い早い</h5>
+          <img 
+            class="stage-one-play"  
+            src="ステージ１のプレイ.png" 
+            alt ="ステージ１のプレイの画像"
+          >
+          <h5>このステージ５の作り込み様である</h5>
+          <img 
+            class="stage-five-gamen"  
+            src="ステージ５.png" 
+            alt ="ステージ５の画像"
+          >
+          <br>
+          <A href="myfirstgame.zip">こちらからダウンロードできます。</A>
+        </div>
+      </div>
+    </div>
+      
+  </body>
 </html>
