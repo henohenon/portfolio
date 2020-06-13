@@ -1,10 +1,201 @@
-body
+@media screen and (max-width:480px){
+    body
+    {
+        background-color:white;
+    }
+    h1
+    {
+        position: relative;
+        font-size:1.5em;
+        padding: 0.1em 0.5em;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        background: -webkit-linear-gradient(to right, rgb(255, 241, 179), transparent);
+        background: linear-gradient(to right, rgb(138, 255, 215), transparent);
+    }
+    h3
+    { 
+        text-align:center;
+        position: relative;
+        padding: 0px 26px 0px 42px;
+        background: #fcffd9;
+        font-size: 20px;
+        color: #2d2d2d;
+        margin-left: -33px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        line-height: 1.3;
+        border-bottom: solid 3px rgb(138, 255, 239);
+        z-index:-2;
+    }
+    h3:before {
+        position: absolute;
+        content: '';
+        left: -2px;
+        top: -2px;
+        width: 0;
+        height: 0;
+        border: none;
+        border-left: solid 40px white;
+        border-bottom: solid 79px transparent;
+        z-index: -1;
+      }
+      
+      h3:after {
+        position: absolute;
+        content: '';
+        right: -3px;
+        top: -7px;
+        width: 0;
+        height: 0;
+        border: none;
+        border-left: solid 40px transparent;
+        border-bottom: solid 79px white;
+        z-index: -1;
+      }
+    .box16{
+        padding: 0.5em 1em;
+        margin: 0.5em 0;
+        background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+        background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    }
+    .box16 h2 {
+        margin: 0; 
+        padding: 0;
+    }
+    .unity-rogo
+    {
+        width:275px;
+        height:100px;
+    }
+    .html5-rogo
+    {
+        width:100px;
+        height:100px;
+    }
+    .css-rogo
+    {
+        width:85px;
+        height:85px;
+    }
+    .javasc-rogo
+    {
+        width:100px;
+        height:100px;
+    }
+    .blender-rogo
+    {
+        width:324px;
+        height:85.05px;
+    }
+    .dekitext
+    {
+        text-align: center;
+        margin:10px;
+    }
+    .sakuhin
+    {
+        margin: 16px auto;
+        text-align: center;
+        display: block;
+    }
+    .sakuhinkuwasitex
+    {
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-top:0px;
+        margin-bottom:10px;   
+    }
+    .jikosyokai
+    {
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .keisanki-gamen
+    {
+        width:317px;
+        height:132px;
+    }
+    .human-moderu-syomen
+    {
+        width:295.25px;
+        height:379.25px;
+    }
+    .human-moderu-usiro
+    {
+        width:303px;
+        height:387px;
+    }
+    .human-moderu-kakudai
+    {
+        width:241.25px;
+        height:373.25px;
+    }
+    .stage-one-play
+    {
+        width:248px;
+        height:252.5px;
+    }
+    .stage-five-gamen
+    {
+        width:317.5px;
+        height:334.75px;
+    }
+        
+      /*クリックされたら表示*/
+    .hidden_box 
+    {
+        text-align: center;
+        margin: 0em 0.75em;
+        padding: 0;
+    }
+    
+    .hidden_box label 
+    {
+        padding: 5px;
+        font-weight: 5px;
+        border: solid 2px black;
+        cursor :pointer;
+    }
+    
+    .hidden_box label:hover 
+    {
+        background: #efefef;
+    }
+    
+    .hidden_box input {
+        display: none;
+    }
+    
+    .hidden_box .hidden_show 
+    {
+    
+        height: 10px;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.8s;
+    }
+    
+    .hidden_box input:checked ~ .hidden_show 
+    {
+        padding: 0px 0;
+        height: auto;
+        opacity: 1;
+    }
+}
+@media screen and (min-width:781px)
+{
+    body
 {
     background-color:white;
 }
 h1
 {
     position: relative;
+    font-size:2em;
     padding: 0.1em 0.5em;
     background: -webkit-linear-gradient(to right, rgb(255, 241, 179), transparent);
     background: linear-gradient(to right, rgb(138, 255, 215), transparent);
@@ -171,4 +362,5 @@ h3:before {
     padding: 0px 0;
     height: auto;
     opacity: 1;
+}
 }
