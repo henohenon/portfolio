@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
     body
     {
         width: 100%;
@@ -122,22 +122,22 @@
         width:317px;
         height:132px;
     }
-    .human-moderu-syomen
-    {
-        width:295.25px;
-        height:379.25px;
-    }
-    .human-moderu-usiro
-    {
-        width:303px;
-        height:387px;
-    }
-    .human-moderu-kakudai
-    {
-        width:241.25px;
-        height:373.25px;
-    }
-    .stage-one-play
+    .human-moderu-ao
+{
+    width:658px;
+    height:672px;
+}
+.human-moderu-aka
+{
+    width:384px;
+    height:662px;
+}
+.human-moderu-usiro
+{
+    width:594px;
+    height:765px;
+}
+.stage-one-play
     {
         width:248px;
         height:252.5px;
@@ -190,7 +190,187 @@
         opacity: 1;
     }
 }
-@media screen and (min-width:781px)
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+    body
+    {
+        background-color:white;
+    }
+    h1
+    {
+        position: relative;
+        margin: 0;
+        font-size:2.4em;
+        padding: 0.1em 0.5em;
+        background: -webkit-linear-gradient(to right, rgb(255, 241, 179), transparent);
+        background: linear-gradient(to right, rgb(138, 255, 215), transparent);
+    }
+    h3
+    {  position: relative;
+        padding: 5px 26px 5px 42px;
+        background: #fcffd9;
+        font-size: 25px;
+        color: #2d2d2d;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: -33px;
+        line-height: 1.3;
+        border-bottom: solid 3px rgb(138, 255, 239);
+        z-index:-2;
+    }
+    h3:before {
+        position: absolute;
+        content: '';
+        left: -2px;
+        top: -2px;
+        width: 0;
+        height: 0;
+        border: none;
+        border-left: solid 40px white;
+        border-bottom: solid 79px transparent;
+        z-index: -1;
+      }
+      
+      h3:after {
+        position: absolute;
+        content: '';
+        right: -3px;
+        top: -7px;
+        width: 0;
+        height: 0;
+        border: none;
+        border-left: solid 40px transparent;
+        border-bottom: solid 79px white;
+        z-index: -1;
+      }
+    .box16{
+        padding: 0.5em 1em;
+        margin: 0.1em;
+        background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+        background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    }
+    .box16 h2 {
+        margin: 0; 
+        padding: 0;
+    }
+    .unity-rogo
+    {
+        width:275px;
+        height:100px;
+    }
+    .html5-rogo
+    {
+        width:100px;
+        height:100px;
+    }
+    .css-rogo
+    {
+        width:85px;
+        height:85px;
+    }
+    .javasc-rogo
+    {
+        width:100px;
+        height:100px;
+    }
+    .blender-rogo
+    {
+        width:324px;
+        height:85.05px;
+    }
+    .dekitext
+    {
+        text-align: center;
+        margin:10px;
+    }
+    .sakuhin
+    {
+        margin: 16px auto;
+        text-align: center;
+        display: block;
+    }
+    .sakuhinkuwasitex
+    {
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-top:0px;
+        margin-bottom:10px;   
+    }
+    .jikosyokai
+    {
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+    .keisanki-gamen
+    {
+        width:634px;
+        height:264px;
+    }
+    .human-moderu-syomen
+    {
+        width:590.5px;
+        height:758.5px;
+    }
+    .human-moderu-usiro
+    {
+        width:606px;
+        height:774px;
+    }
+    .human-moderu-kakudai
+    {
+        width:482.5px;
+        height:746.5px;
+    }
+    .stage-one-play
+    {
+        width:496px;
+        height:505px;
+    }
+    .stage-five-gamen
+    {
+        width:635px;
+        height:669.5px;
+    }
+      /*クリックされたら表示*/
+    .hidden_box {
+        text-align: center;
+        margin: 0em 0.75em;
+        padding: 0;
+    }
+    
+    .hidden_box label {
+        padding: 5px;
+        font-weight: 5px;
+        border: solid 2px black;
+        cursor :pointer;
+    }
+    
+    .hidden_box label:hover {
+        background: #efefef;
+    }
+    
+    .hidden_box input {
+        display: none;
+    }
+    
+    .hidden_box .hidden_show {
+    
+        height: 10px;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.8s;
+    }
+    
+    .hidden_box input:checked ~ .hidden_show {
+        padding: 0px 0;
+        height: auto;
+        opacity: 1;
+    }
+}
+@media screen and (min-width:1200px)
 {
     body
 {
@@ -305,20 +485,20 @@ h3:before {
     width:634px;
     height:264px;
 }
-.human-moderu-syomen
+.human-moderu-ao
 {
-    width:590.5px;
-    height:758.5px;
+    width:658px;
+    height:672px;
+}
+.human-moderu-aka
+{
+    width:384px;
+    height:662px;
 }
 .human-moderu-usiro
 {
-    width:606px;
-    height:774px;
-}
-.human-moderu-kakudai
-{
-    width:482.5px;
-    height:746.5px;
+    width:594px;
+    height:765px;
 }
 .stage-one-play
 {
