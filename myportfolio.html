@@ -6,15 +6,18 @@
     <title>Henohenonのポートフォリオ</title>
 </head>
 <body>
+  <div id="ImgDiv">
+    <img id="BGImg"/>
+  </div>
   <link rel="stylesheet" href="myportfolio.css" />
-  <h1>Henohenon's　portfolio</h1>
+  <h1 id="h1">Henohenon's　portfolio</h1>
     <h3>私について</h3>
     <ul>
       <li class="jikosyokai">n高等学校5期生、開発依存症気味な高校一年生(現在16才)</li>
       <li class="jikosyokai">UEでゲーム開発や、面白いwebページ等を作るのが趣味</li>
       <li class="jikosyokai">ゲーム開発の流れで、blenderでモデリングしてたりもする(最近できてない)</li>
       <li class="jikosyokai">へのへのもへじが好き、独特なへのへのたちを日々生み出す</li>
-      <li class="jikosyokai">実はIT系でのアルバイト経験あり</li>
+      <li class="jikosyokai">実は父の仕事の手伝いでIT系でのアルバイト経験あり</li>
     </ul>
     <h3>できること</h3><br>
     <span class="box_div">
@@ -70,7 +73,18 @@
         <h5 class="dekitext">ぐらいの若輩者</h5>
         <h5 class="dekitext">始めてまだ半年ちょっと</h5>
       </span>
-    
+      <span class="box16">
+        <h2>React</h2>
+        <img
+        class ="react-rogo"
+        src="./react-logo.png"
+        alt="Reactのロゴ"
+        />
+        <h5 class="dekitext"></h5>
+        <h5 class="dekitext">1からチャット作ったことはある</h5>
+        <h5 class="dekitext">reduxは使えない</h5>
+        <h5 class="dekitext">代わりにhooksがちょっとだけ使える</h5>
+      </span>
     </span>
       <h3>作品</h3>
     <div>
@@ -210,9 +224,29 @@
           <a href="https://henohenon.github.io/mojigao-maker/scripts/mojigao-maker.html">実際のページはこちら</a><br>
           <a href="https://github.com/henohenon/mojigao-maker">コードはこちら</a>
         </div>
+        <h4 class="sakuhin">・React・firebaseを使用した「エモいチャット。」</h4>
+        <div class="hidden_box">
+          <label for="label6">クリックで詳しくみる</label>
+          <input type="checkbox" id="label6"/>
+          <div class="hidden_show">
+              <p class="sakuhin-kuwasi-tex">
+                Reactとfirebaseを使って、自分だけで1からチャット作りました<br>
+                Jqueryオワコンみたいな話を聞いて以来頭から離れなくなったので、Jqueryを使っていません。<br>
+                文字顔メーカーに勝るとも劣らないアイコン作成機能もあります！<br>
+              </p>
+            <h5 class="img-setume">バグがあったりなかったりしますが、結構動きます！</h5>
+            <img 
+              class="emoichat-gamen"  
+              src="./エモいチャットの画面.png" 
+              alt ="エモいチャット。の画面"
+            >
+            <br>
+            <a href="https://emoichat-300700.web.app/">動作ページはこちら</a>
+            <a href="https://emoichat-300700.web.app/">コードはこちら</a>
+          </div>
+        </div>
       </div>
-      
     </div>
-      
+    <script src="./myportfolio.js"></script>
   </body>
 </html>
