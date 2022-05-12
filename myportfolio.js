@@ -58,3 +58,15 @@ function changeImg(){
     img.classList.add('fadeout');
   },8000)
 }
+
+
+function clicked(obj){
+  let activeObjs = document.getElementsByClassName('activeWork');
+  console.log(activeObjs);
+  for(let i=0; i<activeObjs.length; i++){
+    activeObjs[i].classList.remove('activeWork');  
+  }
+  
+  obj.classList.add('activeWork');  
+  
+}

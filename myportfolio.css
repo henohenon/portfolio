@@ -46,11 +46,13 @@ h3:after {
 }
 
 /* 以下スキル */
-#skills{
+#skillsBox{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  max-width: 1300px;
+  margin: auto;
 }
 .skillBox{
   width:310px;
@@ -101,6 +103,8 @@ h3:after {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .workBox{
@@ -176,18 +180,18 @@ h3:after {
 }
 
 /* 展開時の挙動 */
-.workBox:hover{
+.workBox.activeWork{
   width: 100%; 
   height: 800px;
   transition: width 0.3s, height 0.3s;
   /*transition-delay: height 0.3s;*/
 }
-.workBox:hover .subContaintsBox{
+.workBox.activeWork .subContaintsBox{
   height: 400px;
   transition: height 0.3s;
   /*transition-delay: 0.3s;*/
 }
-.workBox:hover .workTitleArrow{
+.workBox.activeWork .workTitleArrow{
   transform: rotate(180deg);
   transition: transform 0.3s;
   /*transition-delay: 0.3s;*/
