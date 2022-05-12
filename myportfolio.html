@@ -5,92 +5,223 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>Henohenonのポートフォリオ</title>
     <link rel="shortcut icon" type="image/x-icon" href="./backGroundImages/へのへのもへじ.png">
+    <link rel="stylesheet" href="myportfolio.css" />
 </head>
 <body>
   <div id="ImgDiv">
     <img id="BGImg"/>
   </div>
-  <link rel="stylesheet" href="myportfolio.css" />
-  <h1 id="h1">Henohenon's　portfolio</h1>
-    <h3>私について</h3>
-    <ul>
-      <li class="jikosyokai">n高等学校5期生、開発依存症気味な高校一年生(現在16才)</li>
-      <li class="jikosyokai">UEでゲーム開発や、面白いwebページ等を作るのが趣味</li>
-      <li class="jikosyokai">ゲーム開発の流れで、blenderでモデリングしてたりもする(最近できてない)</li>
-      <li class="jikosyokai">へのへのもへじが好き、独特なへのへのたちを日々生み出す</li>
+  <h1 id="h1">Henohenon's portfolio</h1>
+  
+  <div>
+    <h3 class="title">AboutMe</h3>
+    <ul id="selfIntroList">
+      <li>UEでゲーム開発や、面白いwebページ等を作るのが趣味</li>
+      <li>ゲーム開発の流れで、blenderでモデリングしてたりもする(最近できてない)</li>
+      <li>へのへのもへじが好き、独特なへのへのたちを日々生み出す</li>
     </ul>
-    <h3>できること</h3><br>
-    <span class="box_div">
-      <span class="box16">
-        <h2>Unity</h2>
-        <img
-          class ="unity-rogo"
-          src="https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg"
-          alt="unityのロゴ"
-        />
-        <h5 class="dekitext">n高に入ってから一ヶ月ほどでUEに転向、</h5>
-        <h5 class="dekitext">最近はやっていない</h5>
-        <h5 class="dekitext">3~4年ぐらいやっていた</h5>
-      </span>
-      <span class="box16">
-        <h2>html5、css、javascript</h2>
-        <img
-          class ="html5-rogo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
-          alt="html5のロゴ"
-        />
-        <img
-          class ="css-rogo"
-          src="https://on-ze.com/wordpress/wp-content/uploads/2015/03/badge_css3.png"
-          alt="cssのロゴ"
-        />
-        <img
-          class ="javasc-rogo"
-          src="https://wp-doctor.jp/blog/wp-content/uploads/2017/09/javascript.png"
-          alt="javascriptのロゴ"
-        />
-        <h5 class="dekitext">このぐらいのサイトなら作れるがまだまだ</h5>
-        <h5 class="dekitext">n高に入ってから勉強中、ようやく一年ぐらい</h5>
-        <h5 class="dekitext">父の仕事の手伝いと言う形で、アルバイト経験あり</h5>
-      </span>
-      <span class="box16">
-        <h2>blender</h2>
-        <img
-        class ="blender-rogo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Logo_Blender.svg/1200px-Logo_Blender.svg.png"
-        alt="blenderのロゴ"
-        />
-        <h5 class="dekitext">人を作ろうと思い立つぐらいには成長</h5>
-        <h5 class="dekitext">2~3年ぐらいやっている</h5>
-      </span>
-      <span class="box16">
-        <h2>UE4</h2>
-        <img
-        class ="ue4-rogo"
-        src="https://vr.widesoft.co.jp/wp-content/uploads/2017/10/unreal-logo.png"
-        alt="UE4のロゴ"
-        />
-        <h5 class="dekitext">何となーくBPが書ける、C++に手を出す、</h5>
-        <h5 class="dekitext">ぐらいの若輩者</h5>
-        <h5 class="dekitext">始めてまだ半年ちょっと</h5>
-      </span>
-      <span class="box16">
-        <h2>React</h2>
-        <img
-        class ="react-rogo"
-        src="./react-logo.png"
-        alt="Reactのロゴ"
-        />
-        <h5 class="dekitext"></h5>
-        <h5 class="dekitext">1からチャット作ったことはある</h5>
-        <h5 class="dekitext">reduxは使えない</h5>
-        <h5 class="dekitext">代わりにhooksがちょっとだけ使える</h5>
-      </span>
-    </span>
-      <h3>作品</h3>
-    <div>
-      <h4 class="sakuhin">・javascriptで計算機を作る</h4>
-      <div class="hidden_box">
+  </div>
+  
+  <div>
+    <h3 class="title">Skills</h3>
+    <div id="skills">
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Unity</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="unityLogo"
+            src="./logo/unity-logo.png"
+            alt="unityのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5 class="skillText">将棋(バグだらけ)が作れる</h5>
+          <h5 class="skillText">最近はやっていない</h5>
+          <h5 class="skillText">中学〜N高1年で3~4年ぐらい</h5>
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Html Css Javascript</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="htmlLogo"
+            src="./logo/html-logo.png"
+            alt="htmlのロゴ"
+          />
+          <img
+            id ="cssLogo"
+            src="./logo/css-logo.png"
+            alt="cssのロゴ"
+          />
+          <img
+            id ="javascLogo"
+            src="./logo/js-logo.png"
+            alt="javascriptのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>このサイトが作れる</h5>
+          <h5>jsを書くのが一番好きcssもそれなりにできる</h5>
+          <h5>N高に入ってからで2年ちょっと</h5>
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Blender</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="blenderLogo"
+            src="./logo/blender-logo.png"
+            alt="blenderのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>人のモデルを気持ち作れる</h5>
+          <h5>最近は遊びでへのへのを3D化しまくってる</h5>
+          <h5>4〜5年ぐらい</h5>
+        </div>
+      </div>
+      
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>UnrealEngine</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="unreaLogo"
+            src="./logo/unreal-logo.png"
+            alt="unrealのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>一応やってはいるのだが外に出せるものがない...</h5>
+          <h5>n高に入ってからunityから転向</h5>
+          <h5>2年弱程度</h5>
+        </div>
+      </div>
+      
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>React</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="reactLogo"
+            src="./logo/react-logo.png"
+            alt="reactのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>掲示板っぽいものを0から作れる</h5>
+          <h5>唯一使える(使えた)フレームワーク</h5>
+          <h5>実質だと半年ぐらい？</h5>
+        </div>
+      </div>
+      
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Effekseer</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="effekseerLogo"
+            src="./logo/effekseer-logo.png"
+            alt="effekseerのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>戦艦のエフェクトが作れる</h5>
+          <h5>ueのniagaraが使えな過ぎたので導入</h5>
+          <h5>多分半年もやってない</h5>
+        </div>
+      </div>
+      
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Live2D</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="live2dLogo"
+            src="./logo/live2d-logo.png"
+            alt="live2dのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>vtuberもどきの動き付けのみが作れる</h5>
+          <h5>動機：友達に頼まれたから(不純？)</h5>
+          <h5>でもやってたら楽しくなってます</h5>
+          <h5>3ヶ月弱</h5>
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Firebase</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="firebaseLogo"
+            src="./logo/firebase-logo.png"
+            alt="firebaseのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>掲示板などを作れる。firestoreのみ</h5>
+          <h5>できるも何もって感じはあるけど...</h5>
+          <h5>1年ぐらい</h5>
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>Docker</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="dockerLogo"
+            src="./logo/docker-logo.png"
+            alt="dockerのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>普通に使える/使ったことがある</h5>
+          <h5>使いこなせてはない...まだまだ</h5>
+          <h5>半年ぐらい</h5>
+        </div>
+      </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>AdobePremirePro</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="premireproLogo"
+            src="./logo/premirepro-logo.png"
+            alt="premireproのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>最低限の編集はできる</h5>
+          <h5>1年に一回ぐらい使ってる</h5>
+          <h5>実質は一ヶ月前後</h5>
+        </div>
+        </div>
+      <div class="skillBox">
+        <div class="skillTitleBox"><h2>googleDocs</h2></div>
+        <div class="skillLogoBox">
+          <img
+            id ="slideLogo"
+            src="./logo/slide-logo.png"
+            alt="slideのロゴ"
+          />
+          <img
+            id ="documentLogo"
+            src="./logo/document-logo.png"
+            alt="documentのロゴ"
+          />
+          <img
+            id ="spredssheetLogo"
+            src="./logo/spredssheet-logo.png"
+            alt="spredssheetのロゴ"
+          />
+        </div>
+        <div class="skillTextBox">
+          <h5>まともに使ったことあるのは3つのみ</h5>
+          <h5>スライド作るの好きです</h5>
+          <h5>2年ちょっと</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <h3>Works</h3>
+    <div id="worksBox">
+      <!--<h4 class="sakuhin">・javascriptで計算機を作る</h4>
+      <div class="hiddenBox">
         <label for="label1">クリックで詳しくみる</label>
         <input type="checkbox" id="label1"/>
         <div class="hidden_show">
@@ -107,12 +238,17 @@
           <br>
           <a href="https://henohek.github.io/keisanki/keisan.html">こちらから</a>
         </div>
-      </div>
-      <h4 class="sakuhin">・blenderで人の二等身モデルを作る</h4>
-      <div class="hidden_box">
-        <label for="label2">クリックで詳しくみる</label>
-        <input type="checkbox" id="label2"/>
-        <div class="hidden_show">
+      </div>-->
+      <div class="workBox">
+        <div class="workIconBox">
+          <img class="workIcon" src="./workImages/青い方.png"></img>
+          <div class="workTitleBox">
+            <img class="workTitleArrow" src="./workImages/triangle.png"></img>
+            <h4>blenderで人の二等身モデルを作る</h4>
+          </div>
+        </div>
+        
+        <div class="subContaintsBox">
           <p class="sakuhin-kuwasi-tex">
             動画を見ながらですがなんとか作れました。<br>
             その動画で頭身が小さい方が作りやすいと聞いたので、二頭身です。<br>
@@ -121,28 +257,32 @@
             服の部分だけ三面図サボってたので、なかなかデザインが決まらず大変でした。<br>
             新しいゲーム用に作ったのですが使わないかもなので、アニメーションは適当です。<br>
           </p>
-          <h5>剣は、前作ったやつです。あいませんよねw</h5>
-          <img 
-            class="human-moderu-ao"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E9%9D%92%E3%81%84%E6%96%B9.png" 
-            alt ="人モデル青"
-          >
-          <h5>色は二色作りました。</h5>
-          <img 
-            class="human-moderu-aka"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E8%B5%A4%E3%81%84%E6%96%B9.png" 
-            alt ="人モデル赤"
-          >
-          <h5>後ろはこんな感じです。</h5>
-          <img 
-            class="human-moderu-usiro"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E5%BE%8C%E3%82%8D.png" 
-            alt ="人モデル後ろ"
-          >
+          <div class="subImagesBox">
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="human-moderu-aka"  
+                src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E8%B5%A4%E3%81%84%E6%96%B9.png" 
+                alt ="人モデル赤"
+                >
+              </div>
+              <h5>色は二色作りました。</h5>
+            </div>
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="human-moderu-usiro"  
+                src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E5%BE%8C%E3%82%8D.png" 
+                alt ="人モデル後ろ"
+                >
+              </div>
+              <h5>後ろはこんな感じです。</h5>
+            </div>
+          </div>
         </div>
       </div>
-      <h4 class="sakuhin">・初めての、オリジナルゲーム！</h4>
-      <div class="hidden_box">
+      <!--<h4 class="sakuhin">・初めての、オリジナルゲーム！</h4>
+      <div class="hiddenBox">
         <label for="label3">クリックで詳しくみる</label>
         <input type="checkbox" id="label3"/>
         <div class="hidden_show">
@@ -172,96 +312,156 @@
           <br>
           <A href="myfirstgame.zip">こちらからダウンロードできます。</A>
         </div>
-      </div>
-      <h4 class="sakuhin">・slackで動く人狼botを作る</h4>
-      <div class="hidden_box">
-        <label for="label4">クリックで詳しくみる</label>
-        <input type="checkbox" id="label4"/>
-        <div class="hidden_show">
-            <p class="sakuhin-kuwasi-tex">
-              jsonとかは使えないので、ほとんどjsで作りました。<br>
-              学校側に申請が通り、今n高のslackに(非可動ですが)います。<br>
-              ルームを建てた場所と、botとのDMを行き来してもらう感じで作りました。<br>
-            </p>
-          <h5>この時は、3人でやったので、即終わりましたが。。。</h5>
-          <img 
-            class="jinro-bot-play"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E3%83%95%E3%82%9A%E3%83%AC%E3%82%A4%E3%81%AE%E6%A7%98%E5%AD%90.png" 
-            alt ="プレイの様子の画像"
-          >
-          <h5>こんな感じです。わかるかいって感じですよねw</h5>
-          <img 
-            class="jinro-bot-DM"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/bot%E3%81%A8%E3%81%AEDM.png" 
-            alt ="botとのDMの様子の画像"
-          >
-          <br>
-          <a href="https://github.com/henohenon/jinro">コードはこちら。</a>
-        </div>
-      </div>
-      <h4 class="sakuhin">・アイコン作成ページ「文字顔メーカー」</h4>
-      <div class="hidden_box">
-        <label for="label5">クリックで詳しくみる</label>
-        <input type="checkbox" id="label5"/>
-        <div class="hidden_show">
-            <p class="sakuhin-kuwasi-tex">
-              入力した文字を、顔っぽく並べてくれるアイコン作成ページです。<br>
-              頭、体、背景のパーツ全て自分で描きました！詳しことはreadmeを読んでいただけると...<br>
-              学内コンテストの規定により画像処理のライブラリ等は使っていません。<br>
-            </p>
-            <h5>こんな感じです。ダウンロード機能もあります</h5>
-          <img 
-            class="mojigao-display"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E6%96%87%E5%AD%97%E9%A1%94.png" 
-            alt ="実際の画面"
-          ><br>
-          <a href="https://progedu.github.io/webappcontest/2020/summer/result/">こちら学内コンテストで健闘賞をいただくことができました</a><br>
-          <img 
-            class="syojo"  
-            src="https://raw.githubusercontent.com/henohenon/portfolio/master/%E8%B3%9E%E7%8A%B6.png" 
-            alt ="賞状"
-          >
-          <br>
-          <a href="https://henohenon.github.io/mojigao-maker/scripts/mojigao-maker.html">実際のページはこちら</a><br>
-          <a href="https://github.com/henohenon/mojigao-maker">コードはこちら</a>
-        </div>
-        <h4 class="sakuhin">・Blenderで昔作ったモデルを使って動画を作る</h4>
-        <div class="hidden_box">
-          <label for="label6">クリックで詳しくみる</label>
-          <input type="checkbox" id="label6"/>
-          <div class="hidden_show">
-              <p class="sakuhin-kuwasi-tex">
-                星空と砂時計は新しく作りました(星空がめっちゃ重くて大変だった...)<br>
-                動画編集初めてだったんですが、割となんとかなりました(音楽は思いっきりお借りした&効果音0)<br>
-                昔作った子たちを使えてよかった〜<br>
-              </p>
-            <h5 class="img-setume">限定公開にしてしまったために埋め込めないって言う...申し訳ない</h5>
-            <a href="https://www.youtube.com/watch?v=qnLSJ3IcVI8&t=2s">https://www.youtube.com/watch?v=qnLSJ3IcVI8&t=2s</a>
+      </div>-->
+      <div class="workBox">
+        <div class="workIconBox">
+          <img class="workIcon" src="./workImages/botとのDM.png"></img>
+          <div class="workTitleBox">
+            <img class="workTitleArrow" src="./workImages/triangle.png"></img>
+            <h4>slackで動く人狼botを作る</h4>
           </div>
         </div>
-        <h4 class="sakuhin">・React・firebaseを使用した「エモいチャット。」</h4>
-        <div class="hidden_box">
-          <label for="label7">クリックで詳しくみる</label>
-          <input type="checkbox" id="label7"/>
-          <div class="hidden_show">
-              <p class="sakuhin-kuwasi-tex">
-                Reactとfirebaseを使って、自分だけで1からチャット作りました<br>
-                Jqueryオワコンみたいな話を聞いて以来頭から離れなくなったので、Jqueryを使っていません。<br>
-                文字顔メーカーに勝るとも劣らないアイコン作成機能もあります！<br>
-              </p>
-            <h5 class="img-setume">バグがあったりなかったりしますが、結構動きます！</h5>
-            <img 
-              class="emoichat-gamen"  
-              src="./エモいチャットの画面.png" 
-              alt ="エモいチャット。の画面"
-            >
-            <br>
-            <a href="https://emoichat-300700.web.app/">動作ページはこちら</a>
-            <a href="https://emoichat-300700.web.app/">コードはこちら</a>
+        
+        <div class="subContaintsBox">
+          <p class="sakuhin-kuwasi-tex">
+            dbとかは使えなかったので、全部jsで作りました。<br>
+            ルームを建てた場所と、botとのDMを行き来してもらう感じで作りました。<br>
+            ちなみにn高のslackに(非稼働だけど)いるのですが、一回生徒に殺されました()権限ないはずなのにドウシテ<br>
+            それなりに需要ありそうなんですが、確か大人数で使うと通信の回数とかで怒られたので、<br>
+            言っちゃん使われそうなイベントとかじゃあんま使えなさそう(ってのが放置の言い訳だったはず)</br>
+          </p>
+          <div class="subImagesBox">
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="jinro-bot-play"  
+                src="./workImages/プレイの様子.png" 
+                alt ="プレイの様子の画像"
+                >
+              </div>
+              <h5>3人は無理だ</h5>
+            </div>
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="jinro-bot-DM"  
+                src="./workImages/botとのDM.png" 
+                alt ="botとのDMの様子の画像"
+                >
+              </div>  
+              <h5>よくやったと思う。</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="workBox">
+        <div class="workIconBox">
+          <img class="workIcon" src="./workImages/文字顔.png"></img>
+          <div class="workTitleBox">
+            <img class="workTitleArrow" src="./workImages/triangle.png"></img>
+            <h4>アイコン作成ページ「文字顔メーカー」</h4>
+          </div>
+        </div>
+        
+        <div class="subContaintsBox">
+          <p class="sakuhin-kuwasi-tex">
+            入力した文字を、顔っぽく並べてくれる+よくある着せ替え系です。<br>
+            文字の並び替えは配列でいくつかパターンを作ってるって感じ。<br>
+            頭、体、背景のパーツは無駄に自分で描きました。<br>
+            連打するだけでエラーが出たりとまぁバグだらけ。<br>
+            ぱっと見の完成度だと自分の中ではそれなりに高いかもしれない。<br>
+            画像処理のライブラリ等は使っていません(というか使えねぇ)。<br>
+          </p>
+          <div class="subImagesBox">
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="mojigao-display"  
+                src="./workImages/文字顔.png" 
+                alt ="実際の画面"
+                ><br>
+              </div>
+              <h5>こんな感じ。ダウンロード機能もあります</h5>
+            </div>
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="syojo"  
+                src="./workImages/文字顔.png" 
+                alt ="賞状"
+                >
+              </div>
+              <h5>こちら</h5><a href="https://progedu.github.io/webappcontest/2020/summer/result/">学内コンテスト</a><h5>で健闘賞をいただくことができました</h5><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="workBox">
+        <div class="workIconBox">
+          <img class="workIcon" src="./workImages/エモいチャットの画面.png"></img>
+          <div class="workTitleBox">
+            <img class="workTitleArrow" src="./workImages/triangle.png"></img>
+            <h4>React・firebaseを使用した「エモいチャット。」</h4>
+          </div>
+        </div>
+        
+        <div class="subContaintsBox">
+          <p class="sakuhin-kuwasi-tex">
+            Reactとfirebaseを使って、自分だけで1からチャット作りました<br>
+            なんとなくJqueryを使っていません。全然作れた。<br>
+            コメントするとアイコン一覧のアイコンから吹き出しが出て、実際に話してる風に見える機能<br>
+            パーツ配置していく感じのアイコンにより、ボタンを押せば笑ったりとかができる機能<br>
+            などがあって結構お気に入りです。<br>
+            ただ、圧倒的β感ですよね...デザインもそうだし部屋から抜けることも許されねぇ...いずれ改修していきたい。<br>
+          </p>
+          <div class="subImagesBox">
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="emoichat-gamen"  
+                src="./workImages/エモいチャットの画面.png" 
+                alt ="エモいチャット。の画面"
+                >
+              </div>
+              <h5 class="img-setume">バグもありますが、一応動きます。</h5>
+              <a href="https://emoichat-300700.web.app/">コードはこちら</a>
+              <a href="https://emoichat-300700.web.app/">動作ページ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="workBox">
+        <div class="workIconBox">
+          <img class="workIcon" src="./workImages/砂時計battle.png"></img>
+          <div class="workTitleBox">
+            <img class="workTitleArrow" src="./workImages/triangle.png"></img>
+            <h4>Blenderで動画作る</h4>
+          </div>
+        </div>
+        
+        <div class="subContaintsBox">
+            <p class="sakuhin-kuwasi-tex">
+              星空と砂時計は新規ですが、他のモデルは使い回しです<br>
+              動画編集初めてだったんですが、割となんとかなりました(音楽は思いっきりお借りした&効果音0)<br>
+              昔作った子たち活躍させてあげれたので割とそれだけで嬉しい<br>
+              普通にアニメーションは地獄だし書出もむずいしで結構大変でした...<br>
+              もっとたくさんエフェクト置きたかったんですけどぐぬぬ<br>
+            </p>
+          <div class="subImagesBox">
+            <div class="subImageBox">
+              <div class="subImage">
+                <img 
+                class="emoichat-gamen"  
+                src="./workImages/砂時計歩き.png" 
+                alt ="砂時計歩き"
+                >
+              </div>
+              <h5 class="img-setume">限定公開にしてしまったために埋め込めないって言う...申し訳ない</h5>
+              <a href="https://www.youtube.com/watch?v=qnLSJ3IcVI8&t=2s">https://www.youtube.com/watch?v=qnLSJ3IcVI8&t=2s</a>
+            </div>
+          </div>
+        </div>
+     
     <script src="./myportfolio.js"></script>
   </body>
 </html>
