@@ -166,16 +166,27 @@ h3:after {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.subImagesBox iframe{
+  border: 0;
+  display: block;
+  max-width: 99%;
+  width: 494px;
+  padding: 0px;
+  margin: 10px 0px;
+  position: static;
+  visibility: visible;
+  height: 170px;
+}
 .subImageBox{
   width: 400px;
   height: 500px;
 }
 .subImage{
-  height: 400px;
+  max-height: 400px;
 }
 .subImage img{
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 400px;
+  max-width: 400px;
   height: auto;
   width: auto;
 }
