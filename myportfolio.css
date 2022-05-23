@@ -209,66 +209,19 @@ h3:after {
   /*transition-delay: 0.3s;*/
 }
 
+#linksBox{
+  display: flex;
+  justify-content: center;
+}
+.linkIconBox{
+  height: 75px;
+  margin: 10px;
+}
 
-.jikosyokai
-{
-  padding-top:0px;
-  padding-bottom:0px;
-  margin-top:0px;
-  margin-bottom:10px;
+.linkIconBox img{
+  height: 75px;
 }
-.keisanki-gamen
-{
-  width:634px;
-  height:264px;
-}
-.human-moderu-syomen
-{
-  width:5910px;
-  height:758.5px;
-}
-.human-moderu-usiro
-{
-  width:606px;
-  height:774px;
-}
-.human-moderu-kakudai
-{
-  width:482.5px;
-  height:746.5px;
-}
-.stage-one-play
-{
-  width:496px;
-  height:505px;
-}
-.stage-five-gamen
-{
-  width:635px;
-  height:669.5px;
-}
-.jinro-bot-play
-{
-  width:441.5px;
-  height:345px;
-}
-.jinro-bot-DM
-{
-  width:601px;
-  height:535px;
-}
-.mojigao-display
-{
-  width:561px;
-  height:745px;
-}
-.syojo{
-  width:672px;
-  height:504px;
-}
-.emoichat-gamen{
-  width: 800px;
-}
+
 #BGImg{
   position: absolute;
   z-index: -3;
