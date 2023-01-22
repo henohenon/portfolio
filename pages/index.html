@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/backGroundImages/へのへのもへじ.png">
+  <title>Henohenon's portfolio</title>
+
+  <link rel="stylesheet" href="../css/index.css" />
+
+  <script src="../js/index.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="headerTitle">
+      <h1>Henohenon's</h1>
+      <h1>portfolio</h1>
+      <div id="hamburgerBtn" onclick="hambargerBtnActive()"><span></span><span></span><span></span></div>
+      <ul id="dropDownList">
+        <li class="dropDownLink" onclick="dropDownButtonActive(this, 0)"><h5>Top</h5></li>
+        <li class="dropDownLink" onclick="dropDownButtonActive(this, 1)"><h5>AboutMe</h5></li>
+        <li class="dropDownLink" onclick="dropDownButtonActive(this, 2)"><h5>Skills</h5></li>
+        <li class="dropDownLink" onclick="dropDownButtonActive(this, 3)"><h5>Works</h5></li>
+        <!--
+        <li class="dropDownLink"><h5>Future</h5></li>-->
+      </ul>
+    </div>
+    <!--<img id="headerImg" src="../images/名称未設定のアートワーク.png"></img>
+    --></div>
+
+  <div id="moveBody">
+  <div id="topArea">
+    <div id="topImage"></div>
+  </div>
+
+  <div id="aboutArea">
+    <div id="aboutCharacter" class="aboutEachBox">
+      <h1 class="aboutEachTitle">Character</h1>
+      <div class="aboutEachTexts">
+        <h5>社会を知らない若造</h5>
+        <h5>しぶといけどガラスのハート</h5>
+        <h5>縁を大事に生きていきたい</h5>
+      </div>
+    </div>
+
+    <div id="aboutFavorit" class="aboutEachBox">
+      <h1 class="aboutEachTitle">Favorit</h1>
+      <div class="aboutEachTexts">
+        <h5>いろんなことがそこそこ出来る</h5>
+        <h5>友達とやるゲームが一番楽しい</h5>
+        <h5></h5>
+      </div>
+    </div>
+
+    <div id="aboutSub">
+    <div id="aboutCertification" class="aboutSmallBox">
+      <h1 class="aboutSmallTitle">certification</h1>
+      <div class="aboutSmallTexts">
+        <h5>CGマイスター(CGエンジニア検定・CGクリエイター検定)</h5>
+        <h5>カラーコーディネーター検定アドバンスド</h5>
+        <h5>基本情報技術者</h5>
+        <h5>英検三級</h5>
+      </div>
+    </div>
+    <div id="aboutHenoheno" class="aboutSmallBox">
+      <h1 class="aboutSmallTitle">henohenomoheji</h1>
+      <div class="aboutSmallTexts">
+        <h5>コップやパーカー自作するぐらいには好き</h5>
+        <h5>へのへのだけのゲームを完成させるのが夢</h5>
+        <h5></h5>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="skillsArea">
+    <div class="skillBox" id="skillMakeGame">
+      <h1 class="skillName">Make a Game</h1>
+      <div class="skillTexts">
+        <h5>簡単なブロック崩しや、</h5>
+        <h5>アクションゲームなら作れる。</h5>
+        <h5>unityやunrealは独学が過ぎるので、</h5>
+        <h5>正直現時点で実務lvではない。</h5>
+        <h5>私のデジタル創作の原点。</h5>
+      </div>
+      <div class="skillLogos">
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/Scratchlogo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/unity-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/unreal-logo.png"></img></div>
+      </div>
+      </div>
+    <div class="skillBox" id="skillWebSite">
+      <h1 class="skillName">Make a WebSite</h1>
+      <div class="skillTexts">
+        <h5>このサイトが作れて、</h5>
+        <h5>フレームワークが使えはする程度。</h5>
+        <h5>バックエンドも最低限は可能。</h5>
+        <h5>今の私の最高戦力。</h5>
+      </div>
+      <div class="skillLogos">
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/html-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/css-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/js-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/react-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/vuejs_logo_icon_169247.png"></img></div>
+      </div>
+    </div>
+    <div class="skillBox" id="skillOther">
+      <h1 class="skillName">Others</h1>
+      <div class="skillTexts">
+        <h5>上は100時間前後使い込んだ程度、</h5>
+        <h5>下は最低限は使える程度。</h5>
+        <h5>みんな楽しいいい子たちです。</h5>
+        <h5>まだまだ増やしてくぜ。</h5>
+      </div>
+      <div class="skillLogos">
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/live2d-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/firebase-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/effekseer-logo.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/GitHub-Mark-120px-plus.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/clipart2599498.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/Adobe_Corporate_logo.svg.png"></img></div>
+      </div>
+    </div>
+    <div class="skillBox" id="skillPlayGame">
+      <h1 class="skillName">Play a Game</h1>
+      <div class="skillTexts">
+        <h5>若葉シューター99％でX到達</h5>
+        <h5>マスターランク到達回数9回</h5>
+        <h5>(原種)ウパー500匹マジカル交換に放流</h5>
+        <h5>基本はスプラトゥーン廃人。シリーズ合計2000時間。まだ遊びでやれてます</h5>
+      </div>
+      <div class="skillLogos">
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/splatoon.webp"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/pokemonunite.png"></img></div>
+        <div class="skillLogoBox"><img class="skillLogoImg" src="../images/logo/pokemonScarred.png"></img></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="workArea">
+    <div id="timeLine"></div>
+    <div class="workBox">
+      <div class="workTexts">
+        <h1 class="workName">砂時計アニメーション</h1>
+        <div class="workInfo">
+          <h5></h5>
+          <h5>配列・リスト習得</h5>
+        </div>
+        <h5 class="workTime"></h5>
+      </div>
+      <div class="workIconBig"><img src="../images/workImages/砂時計battle.png"></img><h1 class="workIconYaji">←</h1></div>
+      <div class="workIcon"><img src="../images/workImages/砂時計battle.png"></img></div>
+      <div class="workLine"></div>
+    </div>
+    <div class="workBox">
+      <div class="workTexts">
+        <h1 class="workName">将棋ゲー</h1>
+        <div class="workInfo">
+          <h5>unity×blender第一号</h5>
+          <h5>配列・リストの使用</h5>
+        </div>
+        <h5 class="workTime"></h5>
+      </div>
+      <div class="workIconBig"><img src="../images/workImages/将棋.png"></img><h1 class="workIconYaji">←</h1></div>
+      <div class="workIcon"><img src="../images/workImages/将棋.png"></img></div>
+      <div class="workLine"></div>
+
+    </div>
+  </div>
+<!--
+  <div id="futureArea">
+    <div class="futreBox">
+      <img class="futureIcon"></img>
+      <div class="futureTexts">
+        <h1 class="futureName">scratch on scratch</h1>
+        <div class="futureInfo">
+          <h5>scratchというサイトの中でscratchを作ろうという計画</h5>
+          <h5></h5>
+        </div>
+      </div>
+    </div>
+    <div class="futreBox">
+      <img class="futureIcon"></img>
+      <div class="futureTexts">
+        <h1 class="futureName">blenderチュートリアル</h1>
+        <div class="futureInfo">
+          <h5>blenderだっていいじゃない</h5>
+          <h5></h5>
+        </div>
+      </div>
+    </div>
+    <div class="futreBox">
+      <img class="futureIcon"></img>
+      <div class="futureTexts">
+        <h1 class="futureName">VR・AR App</h1>
+        <div class="futureInfo">
+          <h5>加工アプリ✖️ポ○モン</h5>
+          <h5>他人や物を全く別のものに加工し撮影、それを記録する</h5>
+          <h5>法律等検討中</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  
+<!--
+  <div id="bigTexts">
+    <div id="bigHe" class="bigText">
+      <div id="heLine" class="bigTextLine"></div>
+    </div>
+  
+    <div id="bigNo" class="bigText">
+      <div id="noCurveBlack"  class="bigNoLine bigTextLine">
+        <div id="noCurveWhite"  class="bigNoLine bigTextLine"></div>
+      </div>
+      <div id="noCurveMask"   class="bigNoLine bigTextLine"></div>
+      <div id="noCircleBlack" class="bigNoLine bigTextLine">
+        <div id="noCircleWhite" class="bigNoLine bigTextLine"></div>
+      </div>
+    </div>
+    <div id="bigNn" class="bigText">-->
+      <!--
+      <div id="nnCurveBlack" class="bigNnLine bigTextLine"></div>
+      <div id="nnCurveMask"  class="bigNnLine bigTextLine"></div>
+      <div id="nnCurveWhite" class="bigNnLine bigTextLine"></div>
+    -->
+    <!--
+      <div id="nnLowerLine"  class="bigNnLine bigTextLine"></div>
+      <div id="nnUpperLine"  class="bigNnLine bigTextLine"></div>
+    </div>
+    </div>
+    <div id="bigHe" class="bigText">
+      
+      <div id="heLine" class="bigTextLine"></div>
+    </div>
+    
+    <div id="bigNo" class="bigText">
+      <h1></h1>
+      <div id="bigNn" class="bigText">
+        <h1></h1>
+      </div>
+      
+    </div>
+    
+    <div id="footer">
+      <div id="footerTitle">
+        <h1>AboutMe</h1>
+      </div>
+    </div>
+  -->
+</body>
+</html>

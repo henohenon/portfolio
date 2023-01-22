@@ -1,0 +1,609 @@
+body{
+  margin: 0;
+}
+#header{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+#headerTitle{
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  top: 5px;
+}
+#headerTitle h1{
+  margin: 0;
+  margin-top: -10px;
+  font-weight: bold;
+	color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 181, 62);
+}
+#headerImg{
+  width: 768px;
+  margin-left: 200px;
+}
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+#hamburgerBtn{
+	/*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+	position: absolute;
+	border: 1px solid  rgb(255, 181, 62);
+  cursor: pointer;
+  width: 25px;
+  height:25px;
+	border-radius: 5px;
+  margin-left: 10px;
+
+  top: 40px;
+  left: 145px;
+}
+
+/*ボタン内側*/
+#hamburgerBtn span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  left: 4px;
+  height: 1px;
+  border-radius: 2px;
+  background: rgb(255, 181, 62);
+  width: 70%;
+}
+
+#hamburgerBtn span:nth-of-type(1) {
+	top:6.25px;	
+}
+
+#hamburgerBtn span:nth-of-type(2) {
+	top:12.5px;
+}
+
+#hamburgerBtn span:nth-of-type(3) {
+	top:18.75px;
+}
+
+/*activeクラスが付与されると1・3番目の要素が2番目の要素と同じ位置になり一本線に*/
+
+#hamburgerBtn.active span:nth-of-type(1) ,
+#hamburgerBtn.active span:nth-of-type(3){
+  top:12.5px;
+}
+#dropDownList{
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  overflow: hidden;
+  height: 0;
+  transition: .2s;
+}
+#hamburgerBtn.active +#dropDownList{
+  overflow: visible;
+  height: 38px;
+}
+.dropDownLink{
+  font-weight: bold;
+	color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 181, 62);
+  font-size: x-large;
+  margin: 0;
+  width: 100px;
+}
+
+.dropDownLink.active:before {
+  position: absolute;
+  transform: translate(-130%, 32px) rotate(-60deg);
+  width: 10px;
+  border-bottom: 1px solid rgb(255, 181, 62);
+  content: "";
+}
+.dropDownLink.active:after {
+  position: absolute;
+  transform: translate(-55px, 32px) rotate(30deg);
+  width: 17px;
+  border-bottom: 1px solid rgb(255, 181, 62);
+  content: "";
+}
+.dropDownLink h5{
+  padding-left: 20px;
+  margin: 0;
+}
+
+.dropDownLink.active h5{
+  border-bottom: 1px solid rgb(255, 181, 62);
+}
+#footer{
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  text-align: right;
+  z-index: 10;
+}
+#footerTitle{
+  margin: 0;
+}
+#footerTitle h1{
+  font-size: x-large;
+  margin: 0;
+  margin-right: 10px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 181, 62);
+}
+
+#moveBody{
+/*  position: fixed;*/
+  width: 100%;
+  height: 100%;
+}
+#topArea{
+}
+#topImage{
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/スクリーンショット 2023-01-19 10.41.52.png")
+    center / cover;
+  filter: grayscale(100%);
+}
+
+#aboutArea{
+  height: 600px;
+}
+.aboutEachBox{
+}
+.aboutEachTitle{
+  margin: 0px;
+  color: rgb(255, 181, 62);
+  
+  
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: left;
+
+  margin-left: 10px;
+}
+.aboutEachTexts{
+  margin: 0;
+  
+  position: relative;
+  padding: 1.5em 4.5em;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+.aboutEachTexts:before, .aboutEachTexts:after{
+  content: '';
+  top: -10px;
+  width: 1px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+.aboutEachTexts:before {left: 10px;}
+.aboutEachTexts:after {right: 10px;}
+.aboutEachTexts h5{
+  margin: 0px;
+  font-size: larger;
+  font-weight: normal;
+}
+
+#aboutSub{
+  display: flex;
+  justify-content: space-around;
+}
+.aboutSmallBox{
+  margin: 30px;
+}
+.aboutSmallTitle{
+  margin: 0px;
+  font-size: x-large;
+  font-weight: normal;
+}
+.aboutSmallTexts h5{
+  margin: 0px;
+  font-size:larger;
+  font-weight: lighter;
+  color: #808080;
+  margin-left: 5px;
+}
+/*
+#aboutCharacter{
+  transform: translate(8vw, 20vh);
+}
+#aboutFavorit{
+  transform: translate(60vw, 60vh);
+}
+#aboutCertification{
+  transform: translate(68vw, 30vh);
+}
+#aboutHenoheno{
+  transform: translate(12vw, 67vh);
+}*/
+#skillsArea{
+  height: 950px;
+}
+.skillBox{
+  border: 1px solid rgb(255, 181, 62);
+  outline: 1px solid rgb(255, 181, 62);
+  outline-offset: 3px;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.skillBox:nth-child(1){
+  margin-left: 50%;
+}
+.skillBox:nth-child(2){
+  margin-left: 75%;
+  margin-top: 25%;
+}
+.skillBox:nth-child(3){
+  margin-left: 50%;
+  margin-top: 50%;
+}
+.skillBox:nth-child(4){
+  margin-left: 25%;
+  margin-top: 25%;
+}
+.skillName{
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+
+  color: rgb(255, 181, 62);
+
+  font-weight: normal;
+
+}
+.skillTexts{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+#skillWebSite .skillTexts{
+  width: 80%;
+  margin-bottom: 5px;
+}
+#skillOther .skillTexts{
+  margin-bottom: 0px;
+}
+#skillPlayGame .skillTexts{
+  margin-top: 0px;
+}
+.skillTexts h5{
+  margin: 0px;
+  font-size: larger;
+  font-weight: normal;
+}
+.skillLogos{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+#skillMakeGame .skillLogos{
+  margin-top: 0px;
+}
+#skillWebSite .skillLogos{
+  width: 80%;
+  margin-top: 0px;
+}
+#skillOther .skillLogos{
+  width: 85%;
+  margin-top: 0;
+}
+#skillPlayGame .skillLogos{
+
+}
+.skillLogoBox{
+  width: 200px;
+  height: 150px;
+  display: flex;
+}
+#skillMakeGame .skillLogoBox{
+  width: 150px;
+  height: 75px;
+}
+#skillWebSite .skillLogoBox{
+  width: 100px;
+  height: 60px;
+}
+#skillOther .skillLogoBox{
+  width: 100px;
+  height: 60px;
+}
+#skillPlayGame .skillLogoBox{
+  width: 160px;
+  height: 80px;
+}
+.skillLogoImg{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+#worksArea{
+  top: 300vh;
+}
+#timeLine{
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  right: 170px;
+  border-radius: 10px;
+}
+.workBox{
+  display: flex;
+  height: 200px;
+  text-align: left;
+  justify-content: flex-end;
+  margin: 30px;
+  margin-right: 180px;
+}
+.workTexts{
+  width: 420px;
+}
+.workName{
+  height: 60px;
+  margin: 0;
+  color: rgb(255, 181, 62);
+  text-align: right;
+}
+.workInfo{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-right: 10px;
+  height: 110px;
+  text-align: right;
+}
+.workInfo h5{
+  margin: 0px;
+  font-size: larger;
+  font-weight: normal;
+  color: #808080;
+}
+.workTime{
+  margin: auto 0;
+  margin-left: 60px;
+  font-size: large;
+  font-weight: normal;
+}
+.workIcon{
+  border-radius: 0px 50px 50px 0px;
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+.workIcon img{
+  transform: translate(-200px, 0px);
+}
+.workIconBig{
+  width: 0px;
+  height: 200px;
+  position: absolute;
+  right: 379px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.workIconYaji{
+  color: rgb(255, 181, 62);
+  text-shadow: 2px 2px rgb(78, 78, 78);
+}
+.workBox:hover .workIconBig{
+  width: 200px;
+}
+.workIconBig img{
+  transition-duration: 0.5s;
+  transform: translate(-200px, 0px);
+}
+.workBox:hover .workIconBig img{
+  transform: translate(0px, 0px);
+}
+.workLine{
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  margin: auto 0;
+  margin-left: -1px;
+}
+#futureArea{
+  top: 400vh;
+}
+
+#bigTexts{
+  position: absolute;
+  top: 0;
+  height: 300vh;
+  width: 100%;
+
+  margin-top: 100vh;
+}
+
+.bigText{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+
+/*
+#bigHe{
+  top: -60%;
+}
+#bigNo{
+  top: -32%;
+  left: 15%;
+}
+#bigNn{
+  top: 3%;
+  left: 27.3%;
+}*/
+/*
+.bigTextLine{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}*/
+.bigNoLine{
+  /*
+  top: -11%;
+  left: 64%;*/
+}
+
+.bigNnLine{/*
+  top: 45%;
+  left: 115%;*/
+}
+
+#heLine{
+  clip-path: polygon(0 62%, 24% 39%, 100% 70%, 93% 75%, 24% 41%, 5% 67%);
+  background-color: black;
+
+  width: 120%;
+  height: 120%;
+  margin-left: -10%;
+  margin-top: -10%;
+
+  /*top: -60%;*/
+}
+#noCircleBlack{
+  background-color: black;
+  
+  border-radius: 50%;
+  width: 55%;
+  height: 55%;
+  margin-top: 20%;
+}
+
+#noCircleWhite{
+  background-color: white;
+
+  border-radius: 50%;
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+#noCurveBlack{
+  border-radius: 50%;
+
+  width: 90%;
+  height: 90%;
+
+  
+  margin-top: 19%;
+  margin-left: -14%;
+
+  background-color: black;
+}
+#noCurveWhite{
+  border-radius: 50%;
+ 
+  width: 85%;
+  height: 85%;
+  top: 7.5%;
+  left: 7.5%;
+
+
+  background-color: white;
+}
+#noCurveMask{
+  clip-path: polygon(35% 0, 35% 50%, 100% 50%, 100% 100%, 0 100%, 0% 0%);
+  width: 110%;
+  height: 110%;
+  margin-left: -15%;
+  margin-top: 10%;
+  background-color: white;
+}
+
+#nnUpperLine{
+  clip-path: polygon(18.6% 8%, 25.2% 9%, 5% 100%, 0 98%);
+  background-color: black;
+}
+#nnLowerLine{
+  clip-path: polygon(30% 50%, 36% 55%, 7% 100%, 0 98%);
+  background-color: black;
+}
+#nnCurveBlack{
+  clip-path: circle(35% at 60% 60%);
+
+  background-color: black;
+}
+#nnCurveWhite{
+  clip-path: circle(25% at 60% 60%);
+
+  background-color: white;
+  
+}
+#nnCurveMask{
+  clip-path: polygon(0 20%, 100% 20%, 100% 57%, 0 57%);
+
+  background-color: white;
+}
+
+
+
+.backText{
+  font-size: 1000px;
+  position: absolute;
+  color: lightyellow;
+  opacity: .5;
+  z-index: -1;
+}
+#he{
+  top: -1700px;
+}
+
+#he{
+  top: -1700px;
+}
+.backTextBox{
+  overflow-x: hidden;
+}
+
+@media screen and (max-width:768px) {
+  #aboutArea{
+    height: 1050px;
+  }
+  #aboutSub{
+    flex-flow: column;
+  }
+  #skillsArea{
+    height: 1600px;
+    overflow: hidden;
+  }
+.skillBox:nth-child(2){
+  margin-left: 50%;
+  margin-top: 100%;
+}
+.skillBox:nth-child(3){
+  margin-left: 50%;
+  margin-top: 200%;
+}
+.skillBox:nth-child(4){
+  margin-left: 50%;
+  margin-top: 300%;
+}
+
+#timeLine{
+  display: none;
+}
+.workBox{
+  margin-right: 10px;
+}
+.workLine{
+  display: none;
+}
+}
