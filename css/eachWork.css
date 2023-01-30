@@ -1,0 +1,39 @@
+#topTitle{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  font-weight: bold;
+    color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 181, 62);
+    font-size: xx-large;
+}
+#topLink{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: x-large;
+    z-index: 3;
+
+    text-decoration: none;
+    color: rgb(255, 181, 62);
+}
+
+body{
+    text-align: center;
+}
+
+.embedded{
+    margin: auto;
+    width: 90vw;
+    height: 50vw;
+    margin-bottom: 20px;
+}
+.embedded img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h5{
+    margin: 0;
+}

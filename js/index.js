@@ -183,7 +183,9 @@ addEventListener("load", () => {
 });
 
 let activeDropDownElem = null;
+let isScrolling = false;
 function dropDownButtonActive(newElem, offsetNumb){
+  isScrolling = true;
   console.log(offsetNumb)
   if(newElem != activeDropDownElem){
     if(activeDropDownElem){
@@ -201,32 +203,36 @@ function dropDownButtonActive(newElem, offsetNumb){
 
     window.scrollTo(0,  scrollNumb);
   }
+  isScrolling = false;
 }
 let nowlinkOffset = 0;
 window.addEventListener('scroll', function(){
-  let nowOffset = linkOffsets[nowlinkOffset];
-  if(nowlinkOffset != 0){
-    nowOffset += document.documentElement.clientHeight;
-  }
-
-  if(nowOffset>this.window.scrollY || document.documentElement.clientHeight + linkOffsets[nowlinkOffset+1]<this.window.scrollY ){
-    const dropDownElems = this.document.getElementsByClassName('dropDownLink');
-    
-    for(let i = 0; i < linkOffsets.length; i++){
-      let newOffset = linkOffsets[i];
-      if(i != 0){
-        newOffset += document.documentElement.clientHeight;
-      }
-      if(newOffset<=this.window.scrollY && document.documentElement.clientHeight + linkOffsets[i+1]>=this.window.scrollY ){
-        nowlinkOffset=i;
-        const newElem = dropDownElems[i];
-        if(activeDropDownElem){
-          activeDropDownElem.classList.remove('active');
+  if(isScrolling){
+    let nowOffset = linkOffsets[nowlinkOffset];
+    if(nowlinkOffset != 0){
+      nowOffset += document.documentElement.clientHeight;
+    }
+  
+    if(nowOffset>this.window.scrollY || document.documentElement.clientHeight + linkOffsets[nowlinkOffset+1]<this.window.scrollY ){
+      const dropDownElems = this.document.getElementsByClassName('dropDownLink');
+      
+      for(let i = 0; i < linkOffsets.length; i++){
+        let newOffset = linkOffsets[i];
+        if(i != 0){
+          newOffset += document.documentElement.clientHeight;
         }
-        newElem.classList.add('active');
-        activeDropDownElem = newElem;
-        break;
+        if(newOffset<=this.window.scrollY && document.documentElement.clientHeight + linkOffsets[i+1]>=this.window.scrollY ){
+          nowlinkOffset=i;
+          const newElem = dropDownElems[i];
+          if(activeDropDownElem){
+            activeDropDownElem.classList.remove('active');
+          }
+          newElem.classList.add('active');
+          activeDropDownElem = newElem;
+          break;
+        }
       }
     }
   }
+  
 });
