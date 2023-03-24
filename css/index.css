@@ -22,10 +22,11 @@ body{
   z-index: 2;
 }
 #headerTitle{
-  position: absolute;
   width: 100%;
   text-align: left;
   top: 5px;
+  margin-top: 5px;
+  margin-left: 15px;
 }
 #headerTitle h1{
   margin: 0;
@@ -185,7 +186,22 @@ body{
   top: -120vh;
 }
 
-#aboutArea{
+.aboutEachBox{
+}
+.aboutEachTitle{
+  margin: 0px;
+  color: rgb(255, 181, 62);
+  
+  
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: left;
+
+  margin-left: 10px;
+}
+.aboutEachTexts{
+  margin: 0;
+  
   position: relative;
   left: 70vw;
   top: -35vh;
@@ -235,6 +251,240 @@ body{
 #aboutHenoheno{
   transform: translate(12vw, 67vh);
 }*/
+#skillsArea{
+  height: 110vw;
+  max-height: 1300px;
+}
+.skillBox{
+  border: 1px solid rgb(255, 181, 62);
+  outline: 1px solid rgb(255, 181, 62);
+  outline-offset: 3px;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.skillBox:nth-child(1){
+  margin-left: 50%;
+}
+.skillBox:nth-child(2){
+  margin-left: 80%;
+  margin-top: 19%;
+}
+.skillBox:nth-child(3){
+  margin-left: 33%;
+  margin-top: 50%;
+}
+
+.skillBox:nth-child(4){
+  margin-left: 20%;
+  margin-top: 19%;
+}
+
+.skillBox:nth-child(5){
+  margin-left: 67%;
+  margin-top: 50%;
+}
+.skillName{
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+
+  color: rgb(255, 181, 62);
+
+  font-weight: normal;
+
+}
+.skillTexts{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+#skillWebSite .skillTexts{
+  width: 80%;
+  margin-bottom: 5px;
+}
+#skillGrafic .skillTexts{
+  width: 100%;
+  margin-bottom: 5px;
+}
+#skillOther .skillTexts{
+  margin-bottom: 0px;
+}
+#skillPlayGame .skillTexts{
+  margin-top: 0px;
+}
+.skillTexts h5{
+  margin: 0px;
+  font-size: larger;
+  font-weight: normal;
+}
+.skillLogos{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+#skillMakeGame .skillLogos{
+  margin-top: 0px;
+}
+#skillWebSite .skillLogos{
+  width: 80%;
+  margin-top: 0px;
+}
+#skillOther .skillLogos{
+  width: 85%;
+  margin-top: 0;
+}
+#skillPlayGame .skillLogos{
+
+}
+.skillLogoBox{
+  width: 200px;
+  height: 150px;
+  display: flex;
+}
+#skillMakeGame .skillLogoBox{
+  width: 150px;
+  height: 75px;
+}
+#skillWebSite .skillLogoBox{
+  width: 100px;
+  height: 60px;
+}
+#skillOther .skillLogoBox{
+  width: 100px;
+  height: 60px;
+}
+
+#skillOther .skillLogoBox{
+  width: 100px;
+  height: 60px;
+}
+#skillPlayGame .skillLogoBox{
+  width: 160px;
+  height: 80px;
+}
+#skillGrafic .skillLogoBox{
+  width: 160px;
+  height: 80px;
+}
+.skillLogoImg{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+#worksArea{
+  top: 300vh;
+}
+#timeLine{
+  height: 1300px;
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  right: 170px;
+  border-radius: 10px;
+}
+.workBox{
+  display: flex;
+  height: 200px;
+  text-align: left;
+  justify-content: flex-end;
+  margin: 30px;
+  margin-right: 180px;
+
+  text-decoration: none;
+}
+.workTexts{
+  width: 420px;
+}
+.workName{
+  height: 60px;
+  margin: 0;
+  color: rgb(255, 181, 62);
+  text-align: right;
+}
+.workInfo{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-right: 10px;
+  height: 110px;
+  text-align: right;
+}
+.workInfo h5{
+  margin: 0px;
+  font-size: larger;
+  font-weight: normal;
+  color: #808080;
+}
+.workTime{
+  margin: auto 0;
+  margin-left: 60px;
+  font-size: large;
+  font-weight: normal;
+}
+.workIcon{
+  border-radius: 0px 50px 50px 0px;
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+.workIcon img{
+  transform: translate(-200px, 0px);
+  height: 100%;
+  object-fit: contain;
+}
+
+.iconRight .workIcon img{
+  transform: translate(-100px, 0px);
+}
+.workIconBig{
+  width: 0px;
+  height: 200px;
+  position: absolute;
+  right: 379px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+.workIconBig img{
+  object-fit: contain;
+  height: 100%;
+  object-fit: contain;
+}
+.iconRight .workIconBig img{
+  transform: translate(-100px, 0px);
+}
+.workIconYaji{
+  color: rgb(255, 181, 62);
+  text-shadow: 2px 2px rgb(78, 78, 78);
+}
+.workBox:hover .workIconBig{
+  width: 200px;
+}
+.workIconBig img{
+  transition-duration: 0.5s;
+  transform: translate(-200px, 0px);
+}
+.workBox:hover .workIconBig img{
+  transform: translate(0px, 0px);
+}
+.iconRight.workBox:hover .workIconBig img{
+  transform: translate(100px, 0px);
+}
+.workLine{
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  margin: auto 0;
+  margin-left: -1px;
+}
 #futureArea{
   top: 400vh;
 }
@@ -510,27 +760,29 @@ body{
 }
 
 @media screen and (max-width:768px) {
-  #aboutArea{
-    height: 1050px;
-  }
   #aboutSub{
     flex-flow: column;
   }
   #skillsArea{
-    height: 1600px;
+    height: 2200px;
+    max-height: 2200px;
     overflow: hidden;
   }
 .skillBox:nth-child(2){
   margin-left: 50%;
-  margin-top: 100%;
+  margin-top: 425px;
 }
 .skillBox:nth-child(3){
   margin-left: 50%;
-  margin-top: 200%;
+  margin-top: 850px;
 }
 .skillBox:nth-child(4){
   margin-left: 50%;
-  margin-top: 300%;
+  margin-top: 1275px;
+}
+.skillBox:nth-child(5){
+  margin-left: 50%;
+  margin-top: 1700px;
 }
 
 #timeLine{
@@ -542,4 +794,10 @@ body{
 .workLine{
   display: none;
 }
-}*/
+.workIcon{
+  flex-shrink: 0;
+}
+.workIconBig{
+  right: 110px;
+}
+}
