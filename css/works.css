@@ -1,0 +1,88 @@
+
+#worksArea{
+    top: 300vh;
+  }
+  #timeLine{
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    right: 170px;
+    border-radius: 10px;
+  }
+  .workBox{
+    display: flex;
+    height: 200px;
+    text-align: left;
+    justify-content: flex-end;
+    margin: 30px;
+    margin-right: 180px;
+  }
+  .workTexts{
+    width: 420px;
+  }
+  .workName{
+    height: 60px;
+    margin: 0;
+    color: var(--main-color-second);
+    text-align: right;
+  }
+  .workInfo{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-right: 10px;
+    height: 110px;
+    text-align: right;
+  }
+  .workInfo h5{
+    margin: 0px;
+    font-size: larger;
+    font-weight: normal;
+    color: #808080;
+  }
+  .workTime{
+    margin: auto 0;
+    margin-left: 60px;
+    font-size: large;
+    font-weight: normal;
+  }
+  .workIcon{
+    border-radius: 0px 50px 50px 0px;
+    width: 100px;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  .workIcon img{
+    transform: translate(-200px, 0px);
+  }
+  .workIconBig{
+    width: 0px;
+    height: 200px;
+    position: absolute;
+    right: 379px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+  }
+  .workIconYaji{
+    color: var(--main-color-second);
+    text-shadow: 2px 2px rgb(78, 78, 78);
+  }
+  .workBox:hover .workIconBig{
+    width: 200px;
+  }
+  .workIconBig img{
+    transition-duration: 0.5s;
+    transform: translate(-200px, 0px);
+  }
+  .workBox:hover .workIconBig img{
+    transform: translate(0px, 0px);
+  }
+  .workLine{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    margin: auto 0;
+    margin-left: -1px;
+  }

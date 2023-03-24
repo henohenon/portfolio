@@ -1,3 +1,16 @@
+:root {
+  --main-color-first: #000000;
+  --main-color-second:rgb(255, 187, 77);
+  --accent-color: #b7a3e6;
+}
+/*
+#ae1e2c
+8088ff
+#b7a3e6
+rgb(163, 184, 215)
+rgb(255, 181, 62)
+*/
+
 body{
   margin: 0;
 }
@@ -6,7 +19,7 @@ body{
   height: 80px;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 #headerTitle{
   position: absolute;
@@ -18,23 +31,29 @@ body{
   margin: 0;
   margin-top: -10px;
   font-weight: bold;
-	color: transparent;
-  -webkit-text-stroke: 1px rgb(255, 181, 62);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-color-second);
 }
 #headerImg{
-  width: 768px;
-  margin-left: 200px;
+  width: 100px;
+  height: 80px;
+  margin-left: 190px;
+}
+#headHeno{
+  height: 100%;
+
+  filter: drop-shadow(0px 0px 2px var(--accent-color));
 }
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 #hamburgerBtn{
-	/*ボタン内側の基点となるためrelativeを指定。
+  /*ボタン内側の基点となるためrelativeを指定。
 追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
-	position: absolute;
-	border: 1px solid  rgb(255, 181, 62);
+  position: absolute;
+  border: 1px solid  var(--main-color-second);
   cursor: pointer;
   width: 25px;
   height:25px;
-	border-radius: 5px;
+  border-radius: 5px;
   margin-left: 10px;
 
   top: 40px;
@@ -49,20 +68,20 @@ body{
   left: 4px;
   height: 1px;
   border-radius: 2px;
-  background: rgb(255, 181, 62);
+  background: var(--main-color-second);
   width: 70%;
 }
 
 #hamburgerBtn span:nth-of-type(1) {
-	top:6.25px;	
+  top:6.25px;
 }
 
 #hamburgerBtn span:nth-of-type(2) {
-	top:12.5px;
+  top:12.5px;
 }
 
 #hamburgerBtn span:nth-of-type(3) {
-	top:18.75px;
+  top:18.75px;
 }
 
 /*activeクラスが付与されると1・3番目の要素が2番目の要素と同じ位置になり一本線に*/
@@ -85,8 +104,8 @@ body{
 }
 .dropDownLink{
   font-weight: bold;
-	color: transparent;
-  -webkit-text-stroke: 1px rgb(255, 181, 62);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-color-second);
   font-size: x-large;
   margin: 0;
   width: 100px;
@@ -96,15 +115,15 @@ body{
   position: absolute;
   transform: translate(-130%, 32px) rotate(-60deg);
   width: 10px;
-  border-bottom: 1px solid rgb(255, 181, 62);
-  content: "";
+  border-bottom: 1px solid var(--main-color-second);
+  content: “”;
 }
 .dropDownLink.active:after {
   position: absolute;
   transform: translate(-55px, 32px) rotate(30deg);
   width: 17px;
-  border-bottom: 1px solid rgb(255, 181, 62);
-  content: "";
+  border-bottom: 1px solid var(--main-color-second);
+  content: “”;
 }
 .dropDownLink h5{
   padding-left: 20px;
@@ -112,7 +131,7 @@ body{
 }
 
 .dropDownLink.active h5{
-  border-bottom: 1px solid rgb(255, 181, 62);
+  border-bottom: 1px solid var(--main-color-second);
 }
 #footer{
   position: fixed;
@@ -120,7 +139,7 @@ body{
   width: 100%;
   bottom: 0;
   text-align: right;
-  z-index: 10;
+  z-index: 2;
 }
 #footerTitle{
   margin: 0;
@@ -131,83 +150,78 @@ body{
   margin-right: 10px;
   font-weight: bold;
   color: transparent;
-  -webkit-text-stroke: 1px rgb(255, 181, 62);
+  -webkit-text-stroke: 1px var(--main-color-second);
 }
 
 #moveBody{
-/*  position: fixed;*/
-  width: 100%;
-  height: 100%;
-}
-#topArea{
+  position: fixed;
 }
 #topImage{
-  width: 100%;
+  position: absolute;
+  width: 100vw;
   min-height: 100vh;
-  background: url("../images/スクリーンショット 2023-01-19 10.41.52.png")
-    center / cover;
+  bottom: -55vh;
+  left: -52vw;
+  background: url("../images/スクリーンショット 2023-01-19 10.41.52.png") center / cover;
   filter: grayscale(100%);
+}
+#mainTextBoxes{
+  position: fixed;
+}
+.mainTextBox{
+  width: 400px;
+
+}
+.mainTextBox.active{
+  width: 0;
+}
+
+#aboutCharacter{
+  left: -55vw;
+  top: -160vh
+}
+#aboutHistory{
+  left: -5vw;
+  top: -120vh;
 }
 
 #aboutArea{
-  height: 600px;
-}
-.aboutEachBox{
-}
-.aboutEachTitle{
-  margin: 0px;
-  color: rgb(255, 181, 62);
-  
-  
-  font-weight: bolder;
-  font-size: 45px;
-  text-align: left;
-
-  margin-left: 10px;
-}
-.aboutEachTexts{
-  margin: 0;
-  
   position: relative;
-  padding: 1.5em 4.5em;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
-}
-.aboutEachTexts:before, .aboutEachTexts:after{
-  content: '';
-  top: -10px;
-  width: 1px;
-  height: -webkit-calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-color: black;
-}
-.aboutEachTexts:before {left: 10px;}
-.aboutEachTexts:after {right: 10px;}
-.aboutEachTexts h5{
-  margin: 0px;
-  font-size: larger;
-  font-weight: normal;
-}
-
-#aboutSub{
-  display: flex;
-  justify-content: space-around;
+  left: 70vw;
+  top: -35vh;
+  width: 100vw;
+  height: 100vh;
 }
 .aboutSmallBox{
-  margin: 30px;
+  position: absolute;
+}
+#aboutCertification{
+  top: 40%;
+  right: 10%;
+}
+#aboutHenoheno{
+  bottom: 15%;
+  left: 10%;
 }
 .aboutSmallTitle{
   margin: 0px;
   font-size: x-large;
   font-weight: normal;
+  color: var(--main-color-second);;
+  transform:translate(-70%, -15px) rotate(-20deg);
+  width: 100px;
 }
 .aboutSmallTexts h5{
+  rotate: 5deg;
   margin: 0px;
-  font-size:larger;
+  border-bottom: 1px solid var(--main-color-second);
+  font-size: larger;
   font-weight: lighter;
-  color: #808080;
   margin-left: 5px;
+
+  background-color: white;
 }
+
 /*
 #aboutCharacter{
   transform: translate(8vw, 20vh);
@@ -221,221 +235,150 @@ body{
 #aboutHenoheno{
   transform: translate(12vw, 67vh);
 }*/
-#skillsArea{
-  height: 950px;
-}
-.skillBox{
-  border: 1px solid rgb(255, 181, 62);
-  outline: 1px solid rgb(255, 181, 62);
-  outline-offset: 3px;
-  border-radius: 50%;
-  display: flex;
-  flex-flow: column;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  transform: translate(-50%, 0);
-}
-.skillBox:nth-child(1){
-  margin-left: 50%;
-}
-.skillBox:nth-child(2){
-  margin-left: 75%;
-  margin-top: 25%;
-}
-.skillBox:nth-child(3){
-  margin-left: 50%;
-  margin-top: 50%;
-}
-.skillBox:nth-child(4){
-  margin-left: 25%;
-  margin-top: 25%;
-}
-.skillName{
-  margin: 0;
-  margin-top: 25px;
-  text-align: center;
-
-  color: rgb(255, 181, 62);
-
-  font-weight: normal;
-
-}
-.skillTexts{
-  width: 85%;
-  margin: auto;
-  text-align: center;
-  margin-top: 25px;
-}
-#skillWebSite .skillTexts{
-  width: 80%;
-  margin-bottom: 5px;
-}
-#skillOther .skillTexts{
-  margin-bottom: 0px;
-}
-#skillPlayGame .skillTexts{
-  margin-top: 0px;
-}
-.skillTexts h5{
-  margin: 0px;
-  font-size: larger;
-  font-weight: normal;
-}
-.skillLogos{
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-}
-#skillMakeGame .skillLogos{
-  margin-top: 0px;
-}
-#skillWebSite .skillLogos{
-  width: 80%;
-  margin-top: 0px;
-}
-#skillOther .skillLogos{
-  width: 85%;
-  margin-top: 0;
-}
-#skillPlayGame .skillLogos{
-
-}
-.skillLogoBox{
-  width: 200px;
-  height: 150px;
-  display: flex;
-}
-#skillMakeGame .skillLogoBox{
-  width: 150px;
-  height: 75px;
-}
-#skillWebSite .skillLogoBox{
-  width: 100px;
-  height: 60px;
-}
-#skillOther .skillLogoBox{
-  width: 100px;
-  height: 60px;
-}
-#skillPlayGame .skillLogoBox{
-  width: 160px;
-  height: 80px;
-}
-.skillLogoImg{
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-}
-#worksArea{
-  top: 300vh;
-}
-#timeLine{
-  height: 100%;
-  position: absolute;
-  background-color: black;
-  width: 30px;
-  right: 170px;
-  border-radius: 10px;
-}
-.workBox{
-  display: flex;
-  height: 200px;
-  text-align: left;
-  justify-content: flex-end;
-  margin: 30px;
-  margin-right: 180px;
-}
-.workTexts{
-  width: 420px;
-}
-.workName{
-  height: 60px;
-  margin: 0;
-  color: rgb(255, 181, 62);
-  text-align: right;
-}
-.workInfo{
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-  margin-right: 10px;
-  height: 110px;
-  text-align: right;
-}
-.workInfo h5{
-  margin: 0px;
-  font-size: larger;
-  font-weight: normal;
-  color: #808080;
-}
-.workTime{
-  margin: auto 0;
-  margin-left: 60px;
-  font-size: large;
-  font-weight: normal;
-}
-.workIcon{
-  border-radius: 0px 50px 50px 0px;
-  width: 100px;
-  height: 100%;
-  background-color: black;
-  overflow: hidden;
-}
-.workIcon img{
-  transform: translate(-200px, 0px);
-}
-.workIconBig{
-  width: 0px;
-  height: 200px;
-  position: absolute;
-  right: 379px;
-  overflow: hidden;
-  transition-duration: 0.5s;
-}
-.workIconYaji{
-  color: rgb(255, 181, 62);
-  text-shadow: 2px 2px rgb(78, 78, 78);
-}
-.workBox:hover .workIconBig{
-  width: 200px;
-}
-.workIconBig img{
-  transition-duration: 0.5s;
-  transform: translate(-200px, 0px);
-}
-.workBox:hover .workIconBig img{
-  transform: translate(0px, 0px);
-}
-.workLine{
-  width: 100px;
-  height: 20px;
-  background-color: black;
-  margin: auto 0;
-  margin-left: -1px;
-}
 #futureArea{
   top: 400vh;
 }
 
-#bigTexts{
+#backContaints{
   position: absolute;
-  top: 0;
-  height: 300vh;
+
+  z-index: 0;
+}
+
+
+.backTextLine{
+  position: absolute;
+}
+
+#bigHe{
+  height: 170vh;
+  width: 250vw;
+
+  right: 60vh;
+  top: -150vh;
+  position: absolute;
+
+}
+#heLine{
+  clip-path: polygon(0 75%, 30% 0, 100% 100%, 82% 100%, 30% 6%, 10% 79%);
+  background-color: rgb(0, 0, 0);
+  height: 100%;
   width: 100%;
-
-  margin-top: 100vh;
 }
+#topImg{
+  background-color: red;
+  position: absolute;
 
-.bigText{
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  height: 100vh;
+
+  left: -36%;
+  top: 120%;
+}
+#backTexts{
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+#noCircleBlack{
+  width: 200vh;
+  height: 200vh;
+
+  border-radius: 50%;
+  background-color: black;
+
+
+  transform: translate(-50%);
+}
+#noCircleWhite{
+  border-radius: 50%;
+  background-color: white;
+
+  width: 170vh;
+  height: 170vh;
+
+  left: 15vh;
+  top: 15vh;
+
 }
 
+#noCurveBlack{
+  border-radius: 50%;
+  background-color: black;
 
+  width: 503.5vh;
+  width : -webkit-calc(474vh + 15.6vw);
+  width: calc(474vh + 15.6vw);
+  height: 500vh;
+
+  right: -130vh;
+  top: 1.5vh;
+}
+#noCurveWhite{
+  border-radius: 50%;
+
+  width: 450vh;
+  height: 450vh;
+  top: 25vh;
+  left: 25vh;
+
+
+  background-color: white;
+}
+#noCurveMask{
+  clip-path: polygon(45% 0, 45% 50%, 100% 50%, 100% 100%, 0 100%, 0% 0%);
+  width: 120%;
+  height: 120%;
+  margin-left: -15%;
+  background-color: white;
+}
+#bigNnUp{
+  width: 220vw;
+  height: 400vh;
+
+  left: 469vh;
+  top: 299vh;
+
+  position: absolute;
+}
+#nnUpperLine{
+  clip-path: polygon(93% 0, 100% 0%, 77% 85%, 67% 100%);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  left: -92.9%;
+}
+#nnLowerLine{
+  clip-path: polygon(30% 50%, 36% 55%, 7% 100%, 0 98%);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  left: -30%;
+}
+#nnCurveBlack{
+  clip-path: circle(35% at 60% 60%);
+
+  background-color: black;
+
+  width: 100%;
+  height: 100%;
+  left: -29%;
+}
+#nnCurveWhite{
+  clip-path: circle(25% at 60% 60%);
+
+  background-color: white;
+
+  width: 100%;
+  height: 100%;
+}
+#nnCurveMask{
+  clip-path: polygon(0 20%, 100% 20%, 100% 57%, 0 57%);
+
+  background-color: white;
+
+  width: 100%;
+  height: 100%;
+}
 
 /*
 #bigHe{
@@ -450,36 +393,29 @@ body{
   left: 27.3%;
 }*/
 /*
-.bigTextLine{
+.backTextLine{
   width: 100%;
   height: 100%;
   position: absolute;
-}*/
+}*//*
 .bigNoLine{
-  /*
   top: -11%;
-  left: 64%;*/
+  left: 64%;
 }
 
-.bigNnLine{/*
+.bigNnLine{
   top: 45%;
-  left: 115%;*/
+  left: 115%;
 }
-
+*/
+/*
 #heLine{
   clip-path: polygon(0 62%, 24% 39%, 100% 70%, 93% 75%, 24% 41%, 5% 67%);
   background-color: black;
-
-  width: 120%;
-  height: 120%;
-  margin-left: -10%;
-  margin-top: -10%;
-
-  /*top: -60%;*/
 }
 #noCircleBlack{
   background-color: black;
-  
+
   border-radius: 50%;
   width: 55%;
   height: 55%;
@@ -502,7 +438,7 @@ body{
   width: 90%;
   height: 90%;
 
-  
+
   margin-top: 19%;
   margin-left: -14%;
 
@@ -510,7 +446,7 @@ body{
 }
 #noCurveWhite{
   border-radius: 50%;
- 
+
   width: 85%;
   height: 85%;
   top: 7.5%;
@@ -545,7 +481,7 @@ body{
   clip-path: circle(25% at 60% 60%);
 
   background-color: white;
-  
+
 }
 #nnCurveMask{
   clip-path: polygon(0 20%, 100% 20%, 100% 57%, 0 57%);
@@ -606,4 +542,4 @@ body{
 .workLine{
   display: none;
 }
-}
+}*/

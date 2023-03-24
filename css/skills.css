@@ -1,0 +1,198 @@
+
+#skillsArea{
+    position: absolute;
+    height: 210vh;
+    width: 210vh;
+  }
+  .skillBox{
+    border: 1px solid var(--main-color-second);
+    outline-offset: 3px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: translate(-50%, 0);
+  }
+  .skillBox:nth-child(1){
+    margin-left: 105vh;
+    margin-top: -30vh;
+  }
+  .skillBox:nth-child(2){
+    margin-left: 240vh;
+    margin-top: 105vh;
+    rotate: 45deg;
+  }
+  .skillBox:nth-child(3){
+    margin-left: 0vh;
+    margin-top: 105vh;
+    rotate: 0deg;
+  }
+  .skillBox:nth-child(4){
+    margin-left: 105vh;
+    margin-top: 240vh;
+    rotate: 45deg;
+  }
+  .skillName{
+    margin: 0;
+    margin-top: 25px;
+    text-align: center;
+  
+    color: var(--main-color-second);
+  
+    font-weight: normal;
+  
+  }
+  .skillTexts{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #skillWebSite .skillTexts{
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  #skillOther .skillTexts{
+    margin-bottom: 0px;
+  }
+  #skillPlayGame .skillTexts{
+    margin-top: 0px;
+  }
+  .skillTexts h5{
+    margin: 0px;
+    font-size: larger;
+    font-weight: normal;
+  }
+  .skillLogos{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+  #skillMakeGame .skillLogos{
+    margin-top: 0px;
+  }
+  #skillWebSite .skillLogos{
+    width: 80%;
+    margin-top: 0px;
+  }
+  #skillOther .skillLogos{
+    width: 85%;
+    margin-top: 0;
+  }
+  #skillPlayGame .skillLogos{
+  
+  }
+  .skillLogoBox{
+    width: 200px;
+    height: 150px;
+    display: flex;
+  }
+  #skillMakeGame .skillLogoBox{
+    width: 150px;
+    height: 75px;
+  }
+  #skillWebSite .skillLogoBox{
+    width: 100px;
+    height: 60px;
+  }
+  #skillOther .skillLogoBox{
+    width: 100px;
+    height: 60px;
+  }
+  #skillPlayGame .skillLogoBox{
+    width: 160px;
+    height: 80px;
+  }
+  .skillLogoImg{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  .circle-text {
+	position:absolute;
+	width: 400px; /* 直径 */
+	height: 400px; /* 直径 */
+	font-size: 30px;
+	text-align: center;
+    top: -40px;
+	margin: 0;
+}
+  
+.circle-text span {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 15px); /* 中心点、、文字サイズ分ずらす */
+	display: inline-block;
+	width: 40px; /* 文字サイズより小さくしない */
+	height: 240px; /* 半径 */
+	transform-origin: center bottom; /* 回転の基準点 */
+
+    color: var(--main-color-second);
+}
+
+
+.circle-text span:nth-child(1) {
+	transform: rotate(0deg);
+}
+
+.circle-text span:nth-child(2) {
+	transform: rotate(10deg);
+}
+
+.circle-text span:nth-child(3) {
+	transform: rotate(20deg);
+}
+
+.circle-text span:nth-child(4) {
+	transform: rotate(30deg);
+}
+
+.circle-text span:nth-child(5) {
+	transform: rotate(40deg);
+}
+
+.circle-text span:nth-child(6) {
+	transform: rotate(50deg);
+}
+
+.circle-text span:nth-child(7) {
+	transform: rotate(60deg);
+}
+
+.circle-text span:nth-child(8) {
+	transform: rotate(70deg);
+}
+
+.circle-text span:nth-child(9) {
+	transform: rotate(80deg);
+}
+
+.circle-text span:nth-child(10) {
+	transform: rotate(90deg);
+}
+
+.circle-text span:nth-child(11) {
+	transform: rotate(100deg);
+}
+
+.circle-text span:nth-child(12) {
+	transform: rotate(110deg);
+}
+
+.circle-text span:nth-child(13) {
+	transform: rotate(120deg);
+}
+
+.circle-text span:nth-child(14) {
+	transform: rotate(130deg);
+}
+
+.circle-text span:nth-child(15) {
+	transform: rotate(140deg);
+}
+
