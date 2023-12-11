@@ -1,7 +1,7 @@
 // パラメータに基づいてリンクのリストを自動生成
 var blogList = document.getElementById('blog-list');
 var mdSettings = {}; // mdSettings.jsonから取得したデータ
-fetch('/blogs/mdSettings.json')
+fetch('blogs/mdSettings.json')
     .then(response => response.json())
     .then(data => {
         mdSettings = data;
