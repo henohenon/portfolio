@@ -1,0 +1,11 @@
+#blog-content{
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    padding: 10px;
+}
+li {
+    margin: 10px 0;
+}
